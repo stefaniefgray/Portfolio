@@ -12,7 +12,7 @@ Version: 2.0
 a { color: #707E8C!important; }
 
 nav.vertical ul li{	display:block;}
-nav.horizontal ul li{display: inline-block;}
+nav.horizontal ul li{display: inline;}
 img{max-width:100%;}
 
 body {
@@ -25,7 +25,7 @@ body {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 100%;
 	color: #73879C;
-    font-size: 14px;
+    font-size: 16px;
 	line-height: 150%;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
@@ -86,9 +86,10 @@ body {
 
 /* start h_menu */
 .h_menu{
-	float:center;
 	margin-top: 0.6em;
-	display:inline-block;
+	margin: 0;
+	padding: 0;
+	display:inline;
 	}
 
 .flexy-menu{
@@ -96,7 +97,6 @@ body {
 	margin:0;
 	padding:0;
 	position:relative;
-	float:center;
 	list-style:none;
 	display:inline-block;
 	}
@@ -105,21 +105,21 @@ body {
 	font-size:13px;
 	margin:0;
 	padding:0;
-	float:center;
 	line-height:20px;
 	position:relative;
-	display:inline-block;
+	display:inline;
 	}
 
 .flexy-menu>li>a{
 	display: inline-block;
-	float: center;
-	color: #666666!important;
+	text-align: justify;
+	color: #444444!important;
 	padding: 20px 40px 20px 40px;
+	margin: 0;
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 16px;
+	font-size: 24px;
 	font-weight: 400;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+	text-shadow: 5px 5px 5px rgba(0,0,0,0.1);
 	transition: background-color 0.5s ease-out;
 	-o-transition: background-color 0.5s ease-out;
 	-moz-transition: background-color 0.5s ease-out;
@@ -134,10 +134,14 @@ body {
 	text-decoration:none;
 	color: #fff!important;
 	border-bottom: 1px solid #fff;
+	display: inline;
 	}
 
 .flexy-menu li.right{
-	float:right;
+	margin: 0;
+    padding: 0;
+	position: relative;
+	display: inline;
 	}
 
 .flexy-menu ul,.flexy-menu ul li ul{
@@ -149,11 +153,16 @@ body {
 	width: 200px;
 	background:#333;
 	box-shadow:0 1px 1px rgba(0,0,0,0.3);
+	display: inline;
+	color: #444444;
 	}	
 
 .flexy-menu ul{
 	top:60px;
 	left:0;
+	display: inline;
+	margin: 0;
+	padding: 0;
 	}
 
 .flexy-menu ul li ul{
@@ -162,22 +171,23 @@ body {
 	}
 
 .flexy-menu ul li{
-	clear:both;
 	width:100%;
 	border:0;
-	font-size:13px;
+	font-size:14px;
+	margin: 0;
+	padding: 0;
 	}
 
 .flexy-menu ul li a{
 	text-transform: capitalize;
-	text-align: center;
-	font-size: 13px;
-	padding:10px 20px;
+	text-align: justify;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
 	width:100%;
-	color:#dedede;
+	color:#f5f5f5;
 	text-decoration:none;
-	display:inline-block;
-	float:center;clear:both;
+	display:inline;
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
@@ -199,7 +209,8 @@ body {
 	line-height:20px!important;
 	margin-right:6px;
 	font-size:18px;
-	float:center;
+	margin: 0;
+	padding: 0;
 	}
 
 .flexy-menu>li.showhide{
@@ -207,14 +218,14 @@ body {
 	width:100%;
 	height:40px;
 	cursor:pointer;
-	color:#dedede;
+	color:#ffffff;
 	}
 
 .flexy-menu>li.showhide span.title{
 	margin: 10px 0 0 15px;
 	float: left;
 	font-size: 1.3em;
-	color: #666666;
+	color: #444444;
 	}
 
 .flexy-menu>li.showhide span.icon{
@@ -238,16 +249,16 @@ body {
 /*Slider*/
 .da-slider{
 	width: 100%;
-	height:350px;
+	height:10em;
 	position: relative;
-	overflow: hidden;
 	-webkit-transition: background-position 1s ease-out 0.3s;
 	-moz-transition: background-position 1s ease-out 0.3s;
 	-o-transition: background-position 1s ease-out 0.3s;
 	-ms-transition: background-position 1s ease-out 0.3s;
 	transition: background-position 1s ease-out 0.3s;
 	text-align:center;
-	margin-top: 0em;
+	margin-top: 1em;
+	margin-bottom: 2em;
 	}
 
 .da-slide{
@@ -258,6 +269,8 @@ body {
 	left: 0px;
 	text-align: left;
 	font-family: 'Josefin Sans', sans-serif;
+	color: #444444;
+	text-shadow: 5px 5px 5px rgba(0,0,0,0.1);
 	}
 
 .da-slide-current{
@@ -294,23 +307,24 @@ body {
 	}
 
 .da-slide h2{
-	color:#FFFFFF;
+	color:#444444;
 	width: 77%;
 	margin-top:40px;
 	top:0px;
 	white-space: nowrap;
 	z-index: 10;
 	font-weight:600;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-	font-size:3.5em;
+	text-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+	font-size:4em;
 	text-align: center;
 	font-family: 'Josefin Sans', sans-serif;
 	}
 
 .da-slide p{
 	top:110px;
-	color: #FFFFFF;
+	color: #444444;
 	font-size: 1.4em;
+	text-shadow: 5px 5px 5px rgba(0,0,0,0.1);
 	height: 80px;
 	overflow: hidden;
 	font-family: 'Josefin Sans', sans-serif;
@@ -337,9 +351,10 @@ body {
 .da-slide .da-link{
 	top:175px; /*depends on p height*/
 	font-family: 'Josefin Sans', sans-serif;
-	display:inline-block;
-	color:#fff!important;
+	display:inline;
+	color:#444444!important;
 	font-size:1em;
+	text-shadow: 5px 5px 5px rgba(0,0,0,0.1);
 	font-weight:600;
 	text-decoration:none;
 	text-align:center;
@@ -356,18 +371,20 @@ body {
 	-o-border-radius:5px;	
 	}
 
-.down-arrow {
+.down-arrow
+{
 	width:50px;
 	margin: 0 auto;
 	padding: 3em 0em;
-	}
-
+}
 .down-arrow span{
 	background: url(../images/downarrow.png);
 	width:50px;
 	height: 50px;
 	display:block;
-	}
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+	border-radius: 100px;
+}
 
  .da-link:hover{
  	background: #1abc9c;
@@ -608,7 +625,7 @@ body {
 	}
 
 .group_1_text p {
-	color:#666666;
+	color:#444444;
 	font-size: 1em;
 	line-height: 1.9em;
 	}
@@ -642,7 +659,7 @@ body {
 
 .group_2_text2 h4 {
 	font-size: 15px!important;
-	color:#333333;
+	color:#444444;
 	font-size: 0.95em;
 	padding-bottom: 20px;
 	}
@@ -1221,10 +1238,12 @@ footer ul.contacts li {
 
 	.logo{
 		width: 150px;
+		margin-top: 4em;
 	}
 
 	.flexy-menu>li>a {
 	padding: 12px 10px 12px 25px;
+	display: inline;
 	}
 
 .owl-carousel {
@@ -1237,7 +1256,7 @@ footer ul.contacts li {
 	}
 
 	.item h4 a{
-		font-size: 1em;
+		font-size: 1.5em;
 	}
 	#owl-demo .item {
 	margin: 0em;
@@ -1283,6 +1302,8 @@ footer ul.contacts li {
 /*HERO SLIDER*/
 	.da-slider {
 		height:200px;
+		padding: 5em;
+		display: inline-block;
 		}
 
 	.da-slide .da-link {
@@ -1292,11 +1313,14 @@ footer ul.contacts li {
 
 	.da-slide h2 {
 		top: 20px;
-		font-size: 2em;
+		font-size: 3em;
+		clear:both;
+		padding: 0 0 5em 0;
+		margin-bottom: 5em;
 	}
 	.da-slide p {
-	top: 70px;
-	font-size: 1em;
+	top: 6em;
+	font-size: 1.5em;
 	}
 	.da-slide .da-link {
 		top: 105px;
@@ -1309,9 +1333,10 @@ footer ul.contacts li {
 	top: 42%;
 	}
 	.down-arrow {
-	width: 50px;
+	width: 64px;
+	height: 64px;
 	margin: 0 auto;
-	padding: 0.5em 0em;
+	padding: 0em;
 	}
 
 
@@ -1358,21 +1383,24 @@ footer ul.contacts li {
 		}
 
 	.header_style {
-		padding: 10px;
+		padding: 1em;
 		}
 	
 	.logo{
 		float: none;
-		text-align: center;
+		width: 150px;
+		margin-top: 1em;
 		}
 
 	.logo img{
-		margin-top: 50px;
-	}
+		margin-top: 1em;
+		margin-bottom: 1em;
+		}
 
 	.h_menu{
 		float: none;
-		margin: auto;
+		margin-left: 0;
+		margin-right: 0;
 		}
 
 	.flexy-menu{
@@ -1386,7 +1414,7 @@ footer ul.contacts li {
 		width:100%
 	}
 	.flexy-menu li{
-		display:block;
+		display:inline-block;
 		width:100%;
 	}
 
@@ -1425,6 +1453,7 @@ footer ul.contacts li {
 	.flexy-menu ul li a,.flexy-menu.vertical ul li a{
 		padding-top:10px;
 		padding-bottom:10px;
+		display: inline;
 	}
 	.flexy-menu ul>li>a{
 		padding-left:40px!important;
@@ -1439,37 +1468,40 @@ footer ul.contacts li {
 
 
 /*HERO SLIDER*/
-	.da-slider {
-		height:200px;
+.da-slider {
+		height:10em;
 		}
 
 	.da-slide .da-link {
 		margin-left: 25%;
-		margin-top:40px;
+		margin-top:0.5em;
 		}
 
 	.da-slide h2 {
-		top: 20px;
+		margin-top: 0.5em;
 		font-size: 2em;
+		clear:both;
 	}
 	.da-slide p {
-	top: 70px;
-	font-size: 1em;
+		top: 2em;
+		font-size: 2em;
+		margin-bottom: 0.5em;
+		overflow: visible;
 	}
 	.da-slide .da-link {
-		top: 105px;
-		padding: 0.5em 2em;
+		top: 2em;
+		padding: 0.5em 0.5em;
 	}
 	.da-arrows span.da-arrows-next {
 	right: -3px;
 	}
 	.da-arrows span {
-	top: 42%;
+	top: 30%;
 	}
 	.down-arrow {
 	width: 50px;
 	margin: 0 auto;
-	padding: 0.5em 0em;
+	padding: 1em 0em;
 	}
 
 
@@ -1605,7 +1637,8 @@ footer ul.contacts li {
 
 	.logo{
 		float: none;
-		text-align: center;
+		width: 150px;
+		margin-top: 1em;
 		}
 
 	.logo img{
@@ -1615,6 +1648,7 @@ footer ul.contacts li {
 
 	.h_menu{
 		float: none;
+		margin-top:1em;
 		}
 
 	.flexy-menu{
@@ -1690,26 +1724,26 @@ footer ul.contacts li {
 
 	.da-slide .da-link {
 		margin-left: 20%;
-		margin-top:40px;
+		margin-top:2em;
 		}
 
 	.da-slide h2 {
-		top: 40px;
+		top: 0em;
 		font-size: 2em;
 	}
 	.da-slide p {
-	top: 70px;
+	top: 5em;
 	font-size: 1em;
 	}
 	.da-slide .da-link {
-		top: 105px;
+		top: 1em;
 		padding: 0.5em 2em;
 	}
 	.da-arrows span.da-arrows-next {
 	right: -3px;
 	}
 	.da-arrows span {
-	top: 42%;
+	top: 70%;
 	}
 	.down-arrow {
 	width: 50px;
